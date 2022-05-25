@@ -69,7 +69,7 @@
     background: var(--color-light);
     padding: 3rem;
     font-size: 0.88rem;
-    border: 1px solid transparent;
+    border: 1px solid #cacaca;
     transition: all 300ms ease;
     height: 100% !important;
 }
@@ -197,6 +197,7 @@
 .gridServicesItem {
     background-color: var(--color-light);
     border-radius: 1.5rem;
+    padding-top: 20px;
     text-align: center;
     font-style: italic;
     font-weight: bold;
@@ -210,11 +211,13 @@
 
 .registryBackground {
     clip-path: ellipse(60% 100% at 50% -55%);
-    background-color: rgba(0, 0, 0, 0.88);
+    
+    background-image: linear-gradient(rgb(1, 1, 1), rgb(58, 58, 58));
+
 }
 
 .registryElementsBackground {
-    background-color: rgba(0, 0, 0, 0.88) !important;
+    background: linear-gradient(to right, #393939, #161616) !important;
     border-radius: 20px;
 }
 
@@ -223,7 +226,7 @@
 }
 
 .followUps {
-    background-color: rgba(12, 12, 12, 0.85);
+    background: linear-gradient(to right, #393939, #161616);
     border-radius: 1.5rem;
 }
 

@@ -125,13 +125,13 @@ export default function Index() {
                     <div className="container">
                         <div className="row text-center align-items-center mt-5">
                             <div className="col-lg-4">
-                                <h3 className='text-white py-5'>YOU ASK</h3>
+                                <h2 className='text-white py-4'>YOU ASK</h2>
                             </div>
                             <div className={` col-lg-4 text-center mx-auto py-4`}>
                                 <img className={`${styles.newGift} loaded img-fluid p-5`} src="/img/new_gift.png" style={{ height: '200px', width: '60%' }} />
                             </div>
                             <div className="col-lg-4">
-                                <h3 className='text-white py-5'>WE MANAGE</h3>
+                                <h2 className='text-white py-5'>WE MANAGE</h2>
                             </div>
                         </div>
                         <div className="row mt-4">
@@ -230,22 +230,31 @@ export default function Index() {
                                     <h5 className='text-center text-white'>Contact us through: </h5>
                                     <div className="row">
                                         <div className="col-lg-6 text-center">
-                                            <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/whatsapp_icon.png" />
-                                            <h4 className='text-center text-white'>Whatsapp</h4>
+                                            <a className='bg-transparent border-0 no-underline' href={'https://wa.me/+528124004678'}>
+                                                <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/whatsapp_icon.png" />
+                                                <h4 className='text-center text-white'>Whatsapp</h4>
+                                            </a>
                                         </div>
                                         <div className="col-lg-6 text-center">
-                                            <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/phone_icon.png" />
-                                            <h4 className='text-center text-white'>Phone</h4>
+                                            <a className='bg-transparent border-0' href={'https://wa.me/+528124004678'}>
+                                                <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/phone_icon.png" />
+                                                <h4 className='text-center text-white'>Phone</h4>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="row">
+                                        
                                         <div className="col-lg-6 text-center">
-                                            <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/email_icon.png" />
-                                            <h4 className='text-center text-white'>Email</h4>
+                                            <a className='bg-transparent border-0' href={'mailto:servicios@zanco.com.mx'}>
+                                                <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/email_icon.png" />
+                                                <h4 className='text-center text-white'>Email</h4>
+                                            </a>
                                         </div>
                                         <div className="col-lg-6 text-center">
+                                            <a className='bg-transparent border-0' href={'https://calendly.com/zancoo/planeacion-para-junta-fisica'}>
                                             <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/person_icon.png" />
                                             <h4 className='text-center text-white'>Physically</h4>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -338,13 +347,13 @@ export default function Index() {
             {/* END ORDERS */}
 
             {/* TESTIMONIALS */}
-            <section id='testimonials' className='pt-5'>
+            <section id='testimonials' className='pt-5  border-2 border-solid'>
                 <h1 className={`${styles.about__title} text-center pt-5`}>Testimonials</h1>
                 <p className='text-center pt-4'>Honest reviews from honest clients.</p>
                 <div className="container">
-                    <div className="row row-cols-1 row-cols-lg-2 g-4">
+                    <div className="row row-cols-1 row-cols-lg-2 g-4 border-solid ">
 
-                        <div className="col-lg">
+                        <div className="col-lg ">
                             <div className={`${styles.testimonial}`}>
                                 <p>Our team was amazed by the facility of their operation and amazing response time.</p>
                                 <div className={`${styles.testimonial__work}`}>
@@ -457,37 +466,32 @@ export default function Index() {
                 </div>
             </section>
             {/* END FAQs */}
-
+            <br />
+            <br />
 
             {/* INDUSTRIAL CATALOGUE */}
             <section id='catalogue' className='pt-5'>
                 <div className="container pt-5">
                     <div className="row row-cols-1 row-cols-lg-2 g-4 align-items-center justify-content-center">
                         <div className="col-lg text-center">
-                            <img className='' style={{ height: '400px' }} src="/img/catalogHero.png" />
+                            <img className='' style={{ height: '400px' }} src="/images/catalog3.jpg" />
                         </div>
-                        <div className="col-lg">
-                            <h1 className=''>Download <br /> Industrial Catalogue</h1>
+                        <div>
+                            <h1 className='flex flex-inline'>Download <br /> Industrial Catalogue</h1>
                             <p className='mt-5'> In the catalog you will find more information about the products and
                                 their industrial use. If you find yourself interested, contact us directly and subscribe!
                             </p>
                         </div>
+                        <a className=' btn btn-primary justify-content-center' target='_blank' rel="noreferrer" href='https://www.canva.com/design/DAE3DXmbMEY/3n68pCChUWjR3LkVTJHMnQ/view?utm_content=DAE3DXmbMEY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'>
+                                <h4 className=' float-center mx-auto '>DOWNLOAD</h4>
+                        </a>
                     </div>
-                    <div className="row">
-                        <h4> Download here</h4>
-                        <div className="row">
-                            <div className="col-lg-4">
-                                <a className='btn btn-primary justify-content-center' target='_blank' rel="noreferrer" href='https://www.canva.com/design/DAE3DXmbMEY/3n68pCChUWjR3LkVTJHMnQ/view?utm_content=DAE3DXmbMEY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'>
-                                    <img className='float-start' src="/img/catalog2.png" style={{ width: '3rem' }} />
-                                    <div className='float-end mx-auto mt-3 ms-2'>INDUSTRIAL CATALOGUE</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </section>
             {/* END OF INDUSTRIAL CATALOGUE */}
-
+            <br />
+            <br />
             <section id='subscribe'>
                 <div className="container">
                     <div className={`row ${styles.subscribeContainer}`}>
@@ -503,6 +507,8 @@ export default function Index() {
                     </div>
                 </div>
             </section>
+            <br />
+            <br />
         </Layout>
     )
 }
