@@ -202,6 +202,7 @@
     font-style: italic;
     font-weight: bold;
     width: 100%;
+    cursor: pointer;
 }
 
 .newGift {
@@ -211,7 +212,7 @@
 
 .registryBackground {
     clip-path: ellipse(60% 100% at 50% -55%);
-    
+
     background-image: linear-gradient(rgb(1, 1, 1), rgb(58, 58, 58));
 
 }
@@ -230,7 +231,7 @@
     border-radius: 1.5rem;
 }
 
-.quoteHighlight{
+.quoteHighlight {
     color: rgba(130, 130, 130, 1);
 }
 

@@ -27,6 +27,82 @@ export default function Index() {
             </div>
             {/* END MODAL */}
 
+            {/* MODAL FLOORING */}
+            <div className="modal fade" id="formModalFlooring" tabIndex="-1" aria-labelledby="formModalFlooringLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalFlooringLabel">Flooring</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Tarimas/formperma/gXuD0csw0ur6aWOHjVTSB1SCEBEy6MkyZFvQADT8dgA'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL FLOORING */}
+
+            {/* MODAL PLASTERS */}
+            <div className="modal fade" id="formModalPlasters" tabIndex="-1" aria-labelledby="formModalPlastersLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalPlastersLabel">Plasters</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL PLASTERS */}
+
+            {/* MODAL DRYICE */}
+            <div className="modal fade" id="formModalDryice" tabIndex="-1" aria-labelledby="formModalDryiceLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalDryiceLabel">Dry Ice</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL DRYICE */}
+
+            {/* MODAL CARDBOARDS */}
+            <div className="modal fade" id="formModalCardboards" tabIndex="-1" aria-labelledby="formModalCardboardsLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalCardboardsLabel">Dry Ice</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL CARDBOARDS */}
+
             <header className={styles.header}>
                 <div className="h-100 g-0">
                     <div className="row mt-5 h-100 g-0 d-flex">
@@ -141,27 +217,27 @@ export default function Index() {
                             <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
                         </div>
                         <div className={`${styles.gridServices} py-5`}>
-                            <div className={`${styles.gridServicesItem}`}>
+                            <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFlooring">
                                 <img className={`loaded img-fluid`} src="/img/floor.png" style={{ height: '100px' }} />
                                 <p className='mt-3'>Flooring & Crates</p>
                             </div>
                             <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                            <div className={`${styles.gridServicesItem}`}>
+                            <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalPlasters">
                                 <img className={`loaded img-fluid`} src="/img/package.png" style={{ height: '100px' }} />
                                 <p className='mt-3'>Plasters</p>
                             </div>
                             <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                            <div className={`${styles.gridServicesItem}`}>
+                            <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFoams">
                                 <img className={`loaded img-fluid`} src="/img/foam.png" style={{ height: '100px' }} />
                                 <p className='mt-3'>Foam</p>
                             </div>
                             <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                            <div className={`${styles.gridServicesItem}`}>
+                            <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalDryice">
                                 <img className={`loaded img-fluid`} src="/img/dryice.png" style={{ height: '100px' }} />
                                 <p className='mt-3'>Dry Ice</p>
                             </div>
                             <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                            <div className={`${styles.gridServicesItem}`}>
+                            <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalCardboards">
                                 <img className={`loaded img-fluid`} src="/img/cardboard.png" style={{ height: '100px' }} />
                                 <p className='my-auto'>Cardboards & Corrugated</p>
                             </div>
@@ -243,7 +319,7 @@ export default function Index() {
                                         </div>
                                     </div>
                                     <div className="row">
-                                        
+
                                         <div className="col-lg-6 text-center">
                                             <a className='bg-transparent border-0' href={'mailto:servicios@zanco.com.mx'}>
                                                 <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/email_icon.png" />
@@ -252,8 +328,8 @@ export default function Index() {
                                         </div>
                                         <div className="col-lg-6 text-center">
                                             <a className='bg-transparent border-0' href={'https://calendly.com/zancoo/planeacion-para-junta-fisica'}>
-                                            <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/person_icon.png" />
-                                            <h4 className='text-center text-white'>Physically</h4>
+                                                <img className={`loaded p-3 img-fluid`} style={{ height: '60%' }} src="/img/person_icon.png" />
+                                                <h4 className='text-center text-white'>Physically</h4>
                                             </a>
                                         </div>
                                     </div>
@@ -264,7 +340,7 @@ export default function Index() {
                         <div className="row pt-5 mt-5">
                             <div className="col-lg-7 mx-auto">
                                 <img className={`loaded py-5 img-fluid`} style={{ height: '30%' }} src="/img/quotes_icon.png" />
-                                <h3 className='lh-base' style={{ textAlign: 'justify'}}>
+                                <h3 className='lh-base' style={{ textAlign: 'justify' }}>
                                     Streamlining processes is our <span className={`${styles.quoteHighlight}`}>specialty</span>, at Zanco we understand that packaging is an
                                     <span className={`${styles.quoteHighlight}`}>important</span> and <span className={`${styles.quoteHighlight}`}>necessary</span> need for all manufacturing.
                                 </h3>
@@ -278,71 +354,6 @@ export default function Index() {
                         </div>
                     </div>
                 </section>
-
-                {/* <div className="container-fluid">
-                    <div className={`container ${styles.grayOrderContainer}`}>
-                        <div className={`container ${styles.blackOrderContainer}`}>
-                            <div className="row ">
-                                <div className="col-lg-4 text-center">
-                                    <h1 className={`${styles.blackOrderContainerH1}`}>YOU <br />ASK</h1>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="row">
-                                        <div className="col-lg-12 text-center"><img className={`loaded`} src="/img/gift_white.png" style={{ height: '200px', width: '75%' }} /></div>
-                                    </div>
-                                    <div className="row mt-4">
-                                        <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
-                                    </div>
-                                    <div className="row mt-2">
-                                        <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
-                                    </div>
-                                    <div className="row mt-2">
-                                        <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
-                                    </div>
-                                    <div className="row mt-2">
-                                        <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 text-center align-self-end">
-                                    <h1 className={`${styles.blackOrderContainerH1}`}>WE <br />MANAGE</h1>
-                                </div>
-                            </div>
-                            <div className={`${styles.gridServices} py-4`}>
-                                <div className={`${styles.gridServicesItem}`}>
-                                    <img className={`loaded img-fluid`} src="/img/floor.png" style={{ height: '100px' }} />
-                                    <p className='mt-3'>Flooring & Crates</p>
-                                </div>
-                                <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                                <div className={`${styles.gridServicesItem}`}>
-                                    <img className={`loaded img-fluid`} src="/img/package.png" style={{ height: '100px' }} />
-                                    <p className='mt-3'>Plasters</p>
-                                </div>
-                                <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                                <div className={`${styles.gridServicesItem}`}>
-                                    <img className={`loaded img-fluid`} src="/img/foam.png" style={{ height: '100px' }} />
-                                    <p className='mt-3'>Foam</p>
-                                </div>
-                                <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                                <div className={`${styles.gridServicesItem}`}>
-                                    <img className={`loaded img-fluid`} src="/img/dryice.png" style={{ height: '100px' }} />
-                                    <p className='mt-3'>Dry Ice</p>
-                                </div>
-                                <img className={`loaded ${styles.dot} my-auto text-center`} src="/img/dot.png" />
-                                <div className={`${styles.gridServicesItem}`}>
-                                    <img className={`loaded img-fluid`} src="/img/cardboard.png" style={{ height: '100px' }} />
-                                    <p className='my-auto'>Cardboards & Corrugated</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-5">
-                        <div className="col-lg-3 mx-auto text-center">
-                            <div className='btn btn-primary justify-content-center' data-bs-toggle="modal" data-bs-target="#formModal">
-                                <div className='float-end mx-auto'>Registra tu pedido</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </section>
             {/* END ORDERS */}
 
@@ -474,7 +485,7 @@ export default function Index() {
                 <div className="container pt-5">
                     <div className="row row-cols-1 row-cols-lg-2 g-4 align-items-center justify-content-center">
                         <div className="col-lg text-center">
-                            <img className='' style={{ height: '400px' }} src="/images/catalog3.jpg" />
+                            <img className='img-fluid' style={{ height: '400px' }} src="/images/catalog3.jpg" />
                         </div>
                         <div>
                             <h1 className='flex flex-inline'>Download <br /> Industrial Catalogue</h1>
@@ -483,10 +494,10 @@ export default function Index() {
                             </p>
                         </div>
                         <a className=' btn btn-primary justify-content-center' target='_blank' rel="noreferrer" href='https://www.canva.com/design/DAE3DXmbMEY/3n68pCChUWjR3LkVTJHMnQ/view?utm_content=DAE3DXmbMEY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'>
-                                <h4 className=' float-center mx-auto '>DOWNLOAD</h4>
+                            <h4 className=' float-center mx-auto '>DOWNLOAD</h4>
                         </a>
                     </div>
-                
+
                 </div>
             </section>
             {/* END OF INDUSTRIAL CATALOGUE */}
