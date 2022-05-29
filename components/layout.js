@@ -12,7 +12,9 @@ export default function Layout({ children }) {
                 {/* ICONSOUT */}
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css"></link>
                 {/* ICONIFY */}
-                <script async src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script> 
+                <script async src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+                {/* CRIMSON PRO */}
+                <link href='https://fonts.googleapis.com/css?family=Crimson Pro' rel='stylesheet'></link>
             </Head>
             <Navbar></Navbar>
             <div>{children}</div>

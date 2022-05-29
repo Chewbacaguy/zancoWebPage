@@ -41,9 +41,9 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <Link href='/#about'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#about" ? styles.activeLink : ""}`}>About</a></Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link href='/#testimonials'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#testimonials" ? styles.activeLink : ""}`}>Testimonials</a></Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link href='/#faqs'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#faqs" ? styles.activeLink : ""}`}>FAQs</a></Link>
                             </li>
@@ -54,11 +54,11 @@ export default function Navbar() {
                             </li>
                         </ul>
                         <ul className={`navbar-nav ms-auto`}>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link href="/packaging">
                                     <a className={`nav-link ${styles.navlinkright} ${router.pathname == "/packaging" ? styles.activeLink : ""}`}>Packaging</a>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link href="/#catalogue">
                                     <a className={`nav-link ${styles.navlinkright} ${router.asPath == "/#catalogue" ? styles.activeLink : ""}`}>Download Catalog</a>

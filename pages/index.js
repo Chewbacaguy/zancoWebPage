@@ -358,7 +358,7 @@ export default function Index() {
             {/* END ORDERS */}
 
             {/* TESTIMONIALS */}
-            <section id='testimonials' className='pt-5  border-2 border-solid'>
+            {/* <section id='testimonials' className='pt-5  border-2 border-solid'>
                 <h1 className={`${styles.about__title} text-center pt-5`}>Testimonials</h1>
                 <p className='text-center pt-4'>Honest reviews from honest clients.</p>
                 <div className="container">
@@ -441,7 +441,7 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* END TESTIMONIALS */}
 
             {/* FAQs */}
@@ -481,7 +481,7 @@ export default function Index() {
             <br />
 
             {/* INDUSTRIAL CATALOGUE */}
-            <section id='catalogue' className='pt-5'>
+            {/* <section id='catalogue' className='pt-5'>
                 <div className="container pt-5">
                     <div className="row row-cols-1 row-cols-lg-2 g-4 align-items-center justify-content-center">
                         <div className="col-lg text-center">
@@ -499,7 +499,7 @@ export default function Index() {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
             {/* END OF INDUSTRIAL CATALOGUE */}
             <br />
             <br />

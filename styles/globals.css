@@ -17,12 +17,12 @@
     --container-width-phone: 94%;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Crimson Pro';
     color: var(--color-dark);
     line-height: 1.7;
     background: var(--color-white);
@@ -47,40 +47,36 @@ h3 {
     font-weight: 600;
 }
 
-section {
-    /* padding-bottom: var(--bottom-section-padding); */
-}
-
 footer {
     background: var(--color-primary);
     padding-top: 5rem;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     width: 100%;
 }
 
-.footer__container{
+.footer__container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 5rem;
 }
 
-.footer__container > div h4{
+.footer__container>div h4 {
     margin-bottom: 1.6rem;
     color: var(--color-white);
 }
 
-.footer__logo h3{
-    font-size:1.7rem;
+.footer__logo h3 {
+    font-size: 1.7rem;
 }
 
-.footer__1 p{
-    margin:1rem 0 2rem;
+.footer__1 p {
+    margin: 1rem 0 2rem;
     width: 20rem;
 }
 
-.footer__subscribe{
+.footer__subscribe {
     background: transparent;
     border: 1px solid var(--color-light);
     display: flex;
@@ -101,11 +97,11 @@ footer {
     outline: none;
 }
 
-.footer__subscribe input::placeholder{
+.footer__subscribe input::placeholder {
     color: var(--color-light);
 }
 
-.footer__subscribe button{
+.footer__subscribe button {
     background: var(--color-white);
     color: var(--color-black);
     transition: all 300ms ease;
@@ -114,7 +110,7 @@ footer {
     font-size: 1.2rem;
 }
 
-.footer__subscribe button:hover{
+.footer__subscribe button:hover {
     background: var(--color-light);
     color: var(--color-primary);
     cursor: pointer;
@@ -135,32 +131,32 @@ footer ul {
     padding-left: 0;
 }
 
-footer ul li{
+footer ul li {
     margin-bottom: 1rem;
 }
 
-footer ul li a{
+footer ul li a {
     margin-bottom: 1rem;
     text-decoration: none;
     color: white;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
     color: var(--color-white);
     text-decoration: underline;
 }
 
-.footer__4 p{
+.footer__4 p {
     margin-bottom: 1.6rem;
 }
 
-.footer__socials{
+.footer__socials {
     display: flex;
     gap: 1rem;
     font-size: 1.4rem;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem;
@@ -192,7 +188,8 @@ footer ul li a:hover{
     position: inherit;
 }
 
-.btn-primary:focus, .btn-primary:active{
+.btn-primary:focus,
+.btn-primary:active {
     background-color: var(--color-black);
     outline: none !important;
     box-shadow: none !important;
@@ -310,7 +307,7 @@ footer ul li a:hover{
 
 
 
-nav{
+nav {
     background-color: var(--color-primary);
 }
 
@@ -318,23 +315,23 @@ nav{
     padding-top: 10rem;
 }
 
-#contact .container{
+#contact .container {
     display: grid;
     grid-template-columns: 20rem auto;
     gap: 5rem;
 }
 
-#contact .container aside{
+#contact .container aside {
     background: var(--color-light);
     padding: 2rem;
     font-size: 0.9rem;
     color: var(--color-dark);
 }
 
-#contact .container aside h4{
+#contact .container aside h4 {
     color: var(--color-black);
     font-size: 1.8rem;
-    margin-bottom:0.5 rem;
+    margin-bottom: 0.5 rem;
     font-weight: 600;
 }
 
@@ -350,7 +347,7 @@ nav{
 }
 
 
-#contact aside article i{
+#contact aside article i {
     color: var(--color-black);
     font-size: 1.2rem;
 }
@@ -361,14 +358,14 @@ nav{
     color: var(--color-black);
 }
 
-#contact form{
+#contact form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
 #contact form input,
-#contact textarea{
+#contact textarea {
     padding: 1rem;
     background: var(--color-light);
     border: none;
@@ -390,13 +387,13 @@ nav{
     outline: none;
 }
 
-#contact textarea{
+#contact textarea {
     height: 10rem;
     border: none;
 }
 
 
-#contact form button{
+#contact form button {
     width: 8rem;
     background: var(--color-black);
     color: var(--color-white);
@@ -405,7 +402,7 @@ nav{
 
 /* ======= MEDIA QUERIES ======== */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     #contact .container {
         grid-template-columns: 1fr;
         gap: 2rem;
