@@ -8,7 +8,7 @@
 
     .socials {
         color: white;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         margin: 15px 0;
     }
 
@@ -44,7 +44,7 @@
 
 .header {
     height: 100vh;
-    background: url("../public/img/wallpaper.jpg");
+    background: url("../public/img/final_background.jpg");
     background-size: cover;
     background-position: center;
     /* background-repeat: no-repeat; */
