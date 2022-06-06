@@ -3,9 +3,15 @@ import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
+import es from '../locales/es';
+import en from '../locales/en';
 
 export default function Navbar() {
     const router = useRouter();
+
+    const locale = router.locale;
+    console.log(locale);
+    const lang = locale === 'es' ? es : en;
 
     useEffect(() => {
         if (router.pathname == '/contact' || router.pathname == '/packaging') {
@@ -18,6 +24,12 @@ export default function Navbar() {
             });
         }
     })
+
+    const changeLanguage = (e) => {
+        const locale = e.target.value;
+        console.log('cambio');
+        router.push('/', '/', { locale });
+    }
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark ${router.pathname == '/contact' || router.pathname == '/packaging' ? '' : 'bg-transparent '} fixed-top`} style={{ height: '6rem', color: 'white!important' }}>
@@ -39,7 +51,7 @@ export default function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href='/#about'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#about" ? styles.activeLink : ""}`}>About</a></Link>
+                                <Link href='/#about'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#about" ? styles.activeLink : ""}`}>{lang.navAbout}</a></Link>
                             </li>
                             {/* <li className="nav-item">
                                 <Link href='/#testimonials'><a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/#testimonials" ? styles.activeLink : ""}`}>Testimonials</a></Link>
@@ -49,7 +61,7 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <Link href="/contact">
-                                    <a className={`nav-link ${styles.navlinkleft} ${router.asPath == "/contact" ? styles.activeLink : ""}`}>Contact</a>
+                                    <a className={`nav-link ${styles.navlinkleft} ${router.pathname == "/contact" ? styles.activeLink : ""}`}>{lang.navContact}</a>
                                 </Link>
                             </li>
                         </ul>
@@ -59,15 +71,23 @@ export default function Navbar() {
                                     <a className={`nav-link ${styles.navlinkright} ${router.pathname == "/packaging" ? styles.activeLink : ""}`}>Packaging</a>
                                 </Link>
                             </li> */}
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link href="/#catalogue">
                                     <a className={`nav-link ${styles.navlinkright} ${router.asPath == "/#catalogue" ? styles.activeLink : ""}`}>Download Catalog</a>
                                 </Link>
-                            </li>
-                            <li>
+                            </li> */}
+                            <li className='nav-link mt-2'>
                                 <Link href="/home">
-                                    <a className={`nav-link px-5 ${styles.navlinkright} ${styles.navLogin}`}>Login</a>
+                                    <a className={`nav-link px-5 ${styles.navlinkright} ${styles.navLogin}`}>{lang.navLogin}</a>
                                 </Link>
+                            </li>
+                            <li className='nav-item mt-2'>
+                                <a className='nav-link'>
+                                    <select className="form-select" onChange={changeLanguage} >
+                                        <option value='es' onChange={changeLanguage} defaultValue={locale}>Español</option>
+                                        <option value='en' onChange={changeLanguage} defaultValue={locale}>English</option>
+                                    </select>
+                                </a>
                             </li>
                         </ul>
                     </div>

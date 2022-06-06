@@ -1,8 +1,16 @@
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
 import { Icon } from '@iconify/react';
+import { useRouter } from 'next/router';
+import React, { useState, useEffect } from 'react'
+import es from '../locales/es';
+import en from '../locales/en';
 
 export default function Index() {
+
+    const router = useRouter();
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
 
     return (
         <Layout>
@@ -65,6 +73,25 @@ export default function Index() {
             </div>
             {/* END MODAL PLASTERS */}
 
+            {/* MODAL FOAMS */}
+            <div className="modal fade" id="formModalFoams" tabIndex="-1" aria-labelledby="formModalFoamsLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalFoamsLabel">Foams</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL FOAMS */}
+
             {/* MODAL DRYICE */}
             <div className="modal fade" id="formModalDryice" tabIndex="-1" aria-labelledby="formModalDryiceLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
@@ -89,11 +116,11 @@ export default function Index() {
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="formModalCardboardsLabel">Dry Ice</h5>
+                            <h5 className="modal-title" id="formModalCardboardsLabel">Cardboards</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
+                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Cartones/formperma/7MKwAVASyIBnzsQwtpndnU3HpefX9-C0yvO5ViFiePw'></iframe>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -130,8 +157,7 @@ export default function Index() {
                         </div>
                         <div className={`col-10 text-center d-flex align-items-start flex-column`}>
                             <h1 className={[styles.header__title, styles.h1, 'mb-auto'].join(" ")}>Zanco<br />Industrial<br />Distribution<br /></h1>
-                            <p className={`text-white text-center mx-auto ${styles.imageText}`}>At Zanco we integrate all the packaging needs with the goal of creating efficient industrial manufacturing. We understand the importance of the quality that each product deserves,
-                                from the time it leaves the warehouse, until it reaches its destination</p>
+                            <p className={`text-white text-center mx-auto ${styles.imageText}`}>{lang.homeMessage}</p>
                         </div>
                     </div>
                 </div>
@@ -143,12 +169,8 @@ export default function Index() {
                     <br /><br />
                     <div className="row">
                         <div className="col-lg-6 text-white">
-                            <h2 className='text-white' style={{ fontWeight: 'bold' }}>What we do</h2>
-                            <p>We understand the logistical difficulties involved in integrating the respective materials
-                                necessary to pack any product. </p>
-                            <p>That is why our integrator system is
-                                in charge of managing the needs of your manufacturing procedures, in order to facilitate all the
-                                single channel packing operations</p>
+                            <h2 className='text-white' style={{ fontWeight: 'bold' }}>{lang.homeWhatWeDoQuestion}</h2>
+                            <p dangerouslySetInnerHTML={{ __html: lang.homeWhatWeDoAnswer }}></p>
                         </div>
                         <div className="col-lg-4 offset-lg-2">
                             <h1 className='text-white'>3D MODEL</h1>
@@ -180,7 +202,7 @@ export default function Index() {
                     <br />
                     <br />
                     <br />
-                    <h2 className='text-white text-center'>How does it work?</h2>
+                    <h2 className='text-white text-center'>{lang.homeHowDoesItWorkQuestion}</h2>
                     <br />
                     <br />
                     <br />
@@ -192,12 +214,12 @@ export default function Index() {
             {/* ORDERS */}
             <section id='orders' className=''>
                 <br /><br /><br />
-                <h2 className='text-center text-decoration-underline'>It&apos;s easy as ordering a coffee</h2>
+                <h2 className='text-center text-decoration-underline'>{lang.homeCoffe}</h2>
                 <br />
-                <h4 className='text-center'>Everything revolves around the digital brain called Integral Engine (IE)</h4>
+                <h4 className='text-center' style={{ padding: '0 10%' }}>{lang.homeHowDoesItWorkAnswer}</h4>
                 <div className={`${styles.blackOrderContainer}`}>
                     <h3 className='text-center text-white pt-3'>#1</h3>
-                    <h3 className='text-center text-white'>Choose your area of interest</h3>
+                    <h3 className='text-center text-white'>{lang.homeRegistryStep1}</h3>
                     <div className="container">
                         <div className="row text-center align-items-center mt-5">
                             <div className="col-lg-4">
@@ -260,7 +282,7 @@ export default function Index() {
                                     <div className={`col-lg-12 ${styles.registryElementsBackground}`}>
                                         <h3 className='text-center text-white pt-3'>#2</h3>
                                         <h3 className='text-center text-white px-4'>
-                                            Each area has a simple forms where you can register a new packaging order of a specific category.
+                                            {lang.homeRegistryStep2}
                                         </h3>
                                     </div>
                                 </div>
@@ -281,8 +303,8 @@ export default function Index() {
                             <div className={`col-lg-4 align-self-start ${styles.registryElementsBackground}`}>
                                 <h3 className='text-center text-white pt-3'>#3</h3>
                                 <h3 className='text-center text-white p-5'>
-                                    Each order will be registered within our system where you will be able check the status of
-                                    each orderd, it&apos;s progress and follow-ups.
+                                    {lang.homeRegistryStep3}
+
                                 </h3>
                             </div>
                         </div>
@@ -299,7 +321,7 @@ export default function Index() {
                                         FOLLOW UPS <br /> AND ADVISORY
                                     </h2>
                                     <h4 className='text-white'>
-                                        You will be assigned an advisor with whom you can negotiate and review the progress of each order directly.
+                                        {lang.homeRegistryStep4}
                                     </h4>
                                 </div>
                                 <div className="col-lg-5 offset-lg-2 p-5">
@@ -340,14 +362,12 @@ export default function Index() {
                         <div className="row pt-5 mt-5">
                             <div className="col-lg-7 mx-auto">
                                 <img className={`loaded py-5 img-fluid`} style={{ height: '30%' }} src="/img/quotes_icon.png" />
-                                <h3 className='lh-base' style={{ textAlign: 'justify' }}>
-                                    Streamlining processes is our <span className={`${styles.quoteHighlight}`}>specialty</span>, at Zanco we understand that packaging is an
-                                    <span className={`${styles.quoteHighlight}`}>important</span> and <span className={`${styles.quoteHighlight}`}>necessary</span> need for all manufacturing.
+                                <h3 className='lh-base' style={{ textAlign: 'justify' }} dangerouslySetInnerHTML={{ __html: lang.homeCEOMessage }} >
                                 </h3>
                                 <div className="row mt-3">
                                     <div className="col-lg">
-                                        <h6 className='text-end'>Paulo Escobar</h6>
-                                        <h6 className='text-end'>-Zanco CEO</h6>
+                                        <h4 className='text-end'>Paulo Escobar</h4>
+                                        <h4 className='text-end'>-Zanco CEO</h4>
                                     </div>
                                 </div>
                             </div>
