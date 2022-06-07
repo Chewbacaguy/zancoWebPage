@@ -65,7 +65,7 @@ export default function Footer() {
 
                     <div className="col-lg">
                         <div className="copyright">
-                            <small>Copyright &copy; @santorres</small>
+                            <small>Copyright &copy; @santorres & @vergaraa._ </small>
                         </div>
                     </div>
 

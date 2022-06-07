@@ -2,15 +2,38 @@ import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/router';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, setState } from 'react'
 import es from '../locales/es';
 import en from '../locales/en';
+
+var width;
 
 export default function Index() {
 
     const router = useRouter();
     const locale = router.locale;
     const lang = locale === 'es' ? es : en;
+    // var width = window.innerWidth;
+    const [width, setWidth] = useState(0);
+
+    // var width;
+    // console.log(width);
+
+    useEffect(() => {
+        window.addEventListener('load', () => {
+            setWidth(window.innerWidth);
+            // width = window.innerWidth;
+            // console.log(width);
+            // setState({ width: window.innerWidth })
+        });
+
+        window.addEventListener('resize', () => {
+            // width = window.innerWidth;
+            // console.log(width);
+            // setState({ width: window.innerWidth })
+            setWidth(window.innerWidth);
+        })
+    })
 
     return (
         <Layout>
@@ -40,11 +63,11 @@ export default function Index() {
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="formModalFlooringLabel">Flooring</h5>
+                            <h5 className="modal-title" id="formModalFlooringLabel">Tarimas</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Tarimas/formperma/gXuD0csw0ur6aWOHjVTSB1SCEBEy6MkyZFvQADT8dgA'></iframe>
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Tarimas/formperma/gXuD0csw0ur6aWOHjVTSB1SCEBEy6MkyZFvQADT8dgA'></iframe>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -59,11 +82,11 @@ export default function Index() {
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="formModalPlastersLabel">Plasters</h5>
+                            <h5 className="modal-title" id="formModalPlastersLabel">Polietileno</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -78,11 +101,11 @@ export default function Index() {
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="formModalFoamsLabel">Foams</h5>
+                            <h5 className="modal-title" id="formModalFoamsLabel">Foams y derivados</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -92,35 +115,16 @@ export default function Index() {
             </div>
             {/* END MODAL FOAMS */}
 
-            {/* MODAL DRYICE */}
-            <div className="modal fade" id="formModalDryice" tabIndex="-1" aria-labelledby="formModalDryiceLabel" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="formModalDryiceLabel">Dry Ice</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* END MODAL DRYICE */}
-
             {/* MODAL CARDBOARDS */}
             <div className="modal fade" id="formModalCardboards" tabIndex="-1" aria-labelledby="formModalCardboardsLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="formModalCardboardsLabel">Cardboards</h5>
+                            <h5 className="modal-title" id="formModalCardboardsLabel">Cartones</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <iframe frameborder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Cartones/formperma/7MKwAVASyIBnzsQwtpndnU3HpefX9-C0yvO5ViFiePw'></iframe>
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Cartones/formperma/7MKwAVASyIBnzsQwtpndnU3HpefX9-C0yvO5ViFiePw'></iframe>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -155,9 +159,58 @@ export default function Index() {
                                 </a>
                             </div>
                         </div>
-                        <div className={`col-10 text-center d-flex align-items-start flex-column`}>
-                            <h1 className={[styles.header__title, styles.h1, 'mb-auto'].join(" ")}>Zanco<br />Industrial<br />Distribution<br /></h1>
-                            <p className={`text-white text-center mx-auto ${styles.imageText}`}>{lang.homeMessage}</p>
+                        <div className={`col-6 offset-2 text-center d-flex align-items-start flex-column`}>
+                            <h2 className={[styles.header__title, styles.h1, ''].join(" ")}>INTEGRA TU EMPAQUE<br /></h2>
+                            <div className={`${styles.package} container mt-3`} style={{ backgroundColor: 'rgba(64, 64, 64, 0.52)' }}>
+                                <div className="row mx-auto mt-4">
+                                    <div className="col-lg-12 mx-auto text-center">
+                                        <img className={`${styles.newGift} loaded img-fluid p-5`} src="/img/new_gift.png" style={{ height: '175px' }} />
+                                    </div>
+                                </div>
+                                <div className="row mx-auto">
+                                    <div className="col-lg-12 mx-auto text-center">
+                                        {
+                                            width < 1024
+                                                ? <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/arrow_up.png" style={{ height: '150px' }} />
+                                                : <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/flow_chart.png" style={{ height: '200px', width: '87%' }} />
+                                        }
+                                    </div>
+                                </div>
+                                <div className={`${styles.gridServices} pb-5 px-3`}>
+                                    <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFlooring">
+                                        <img className={`loaded img-fluid`} src="/img/floor.png" style={{ height: '80px' }} />
+                                        <p className='mt-3'>Tarimas</p>
+                                    </div>
+                                    {
+                                        width < 1024
+                                            ? <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/arrow_up.png" style={{ height: '75px' }} />
+                                            : ""
+                                    }
+                                    <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalPlasters">
+                                        <img className={`loaded img-fluid`} src="/img/package.png" style={{ height: '80px' }} />
+                                        <p className='mt-3'>Polietileno</p>
+                                    </div>
+                                    {
+                                        width < 1024
+                                            ? <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/arrow_up.png" style={{ height: '75px' }} />
+                                            : ""
+                                    }
+                                    <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFoams">
+                                        <img className={`loaded img-fluid`} src="/img/foam.png" style={{ height: '80px' }} />
+                                        <p className='mt-3'>Foam y derivados</p>
+                                    </div>
+                                    {
+                                        width < 1024
+                                            ? <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/arrow_up.png" style={{ height: '75px' }} />
+                                            : ""
+                                    }
+                                    <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalCardboards">
+                                        <img className={`loaded img-fluid`} src="/img/cardboard.png" style={{ height: '80px' }} />
+                                        <p className='mt-3'>Cartones</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <p className={`text-white text-center mx-auto ${styles.imageText}`}>{lang.homeMessage}</p> */}
                         </div>
                     </div>
                 </div>
@@ -175,7 +228,6 @@ export default function Index() {
                         <div className="col-lg-4 offset-lg-2">
                             <h1 className='text-white'>3D MODEL</h1>
                         </div>
-
                     </div>
                     <div className="container px-4 mt-5">
                         <div className="row bg-white text-center align-items-center p-4">
@@ -226,19 +278,67 @@ export default function Index() {
                                 <h2 className='text-white py-4'>YOU ASK</h2>
                             </div>
                             <div className={` col-lg-4 text-center mx-auto py-4`}>
-                                <img className={`${styles.newGift} loaded img-fluid p-5`} src="/img/new_gift.png" style={{ height: '200px', width: '60%' }} />
+                                <img className={`${styles.newGift} loaded img-fluid p-5`} src="/img/new_gift.png" style={{ height: '175px' }} />
                             </div>
                             <div className="col-lg-4">
                                 <h2 className='text-white py-5'>WE MANAGE</h2>
                             </div>
                         </div>
-                        <div className="row mt-4">
+                        {/* <div className="row mt-4">
                             <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
                         </div>
                         <div className="row mt-2">
                             <div className="col-lg-12 text-center"><img className={`loaded ${styles.dot}`} src="/img/dot.png" /></div>
                         </div>
-                        <div className={`${styles.gridServices} py-5`}>
+                        <div className="row mx-auto mt-4">
+
+                        </div> */}
+                        <div className='' style={width < 1024 ? { padding: '0 5rem' } : { padding: '0 13rem' }}>
+                            <div className="row mx-auto">
+                                <div className="col-lg-12 mx-auto text-center">
+                                    {
+                                        width < 1024
+                                            ? <div><img className={`loaded my-3 ${styles.dot}`} src="/img/dot.png" /><br /><img className={`loaded my-3 ${styles.dot}`} src="/img/dot.png" /></div>
+                                            : <img className={`${styles.flowChart} loaded img-fluid px-5`} src="/img/flow_circles.png" style={{ height: '125px', width: '90%' }} />
+                                    }
+                                </div>
+                            </div>
+                            <div className={`${styles.gridServices} pb-5 px-3`}>
+                                <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFlooring">
+                                    <img className={`loaded img-fluid`} src="/img/floor.png" style={{ height: '80px' }} />
+                                    <p className='mt-3'>Tarimas</p>
+                                </div>
+                                {
+                                    width < 1024
+                                        ? <img className={`loaded my-3 ${styles.dot}`} src="/img/dot.png" />
+                                        : ""
+                                }
+                                <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalPlasters">
+                                    <img className={`loaded img-fluid`} src="/img/package.png" style={{ height: '80px' }} />
+                                    <p className='mt-3'>Polietileno</p>
+                                </div>
+                                {
+                                    width < 1024
+                                        ? <img className={`loaded my-3 ${styles.dot}`} src="/img/dot.png" />
+                                        : ""
+                                }
+                                <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFoams">
+                                    <img className={`loaded img-fluid`} src="/img/foam.png" style={{ height: '80px' }} />
+                                    <p className='mt-3'>Foam y derivados</p>
+                                </div>
+                                {
+                                    width < 1024
+                                        ? <img className={`loaded my-3 ${styles.dot}`} src="/img/dot.png" />
+                                        : ""
+                                }
+                                <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalCardboards">
+                                    <img className={`loaded img-fluid`} src="/img/cardboard.png" style={{ height: '80px' }} />
+                                    <p className='mt-3'>Cartones</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        {/* <div className={`${styles.gridServices} py-5`}>
                             <div className={`${styles.gridServicesItem}`} data-bs-toggle="modal" data-bs-target="#formModalFlooring">
                                 <img className={`loaded img-fluid`} src="/img/floor.png" style={{ height: '100px' }} />
                                 <p className='mt-3'>Flooring & Crates</p>
@@ -263,7 +363,7 @@ export default function Index() {
                                 <img className={`loaded img-fluid`} src="/img/cardboard.png" style={{ height: '100px' }} />
                                 <p className='my-auto'>Cardboards & Corrugated</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -465,7 +565,7 @@ export default function Index() {
             {/* END TESTIMONIALS */}
 
             {/* FAQs */}
-            <section id='faqs' className='pt-5'>
+            {/* <section id='faqs' className='pt-5'>
                 <h1 className={`${styles.about__title} text-center py-5`}>FAQs</h1>
                 <div className="container">
                     <div className="row align-items-center justify-content-center ">
@@ -495,10 +595,10 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* END FAQs */}
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
 
             {/* INDUSTRIAL CATALOGUE */}
             {/* <section id='catalogue' className='pt-5'>
@@ -521,7 +621,7 @@ export default function Index() {
                 </div>
             </section> */}
             {/* END OF INDUSTRIAL CATALOGUE */}
-            <br />
+            {/* <br />
             <br />
             <section id='subscribe'>
                 <div className="container">
@@ -539,7 +639,7 @@ export default function Index() {
                 </div>
             </section>
             <br />
-            <br />
+            <br /> */}
         </Layout>
     )
 }
