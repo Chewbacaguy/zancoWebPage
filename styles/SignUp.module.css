@@ -1,11 +1,111 @@
+.container {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+}
+
+.title {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.signup__image {
+    background-image: url('../public/img/signup.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.signup__form {
+    text-align: center;
+    background-color: rgba(176, 0, 0, 1);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 50px 0;
+}
+
+.signup__input {
+    margin: 3px 0;
+    border: none;
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.signup__button {
+    border: none;
+    border-radius: 20px;
+    padding: 3px 40px;
+}
+
+.text__auth {
+    color: white;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.social__auth__button {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 0px 10px;
+}
+
+.link__register {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .grid__signup {
+        grid-template-columns: 1fr;
+    }
+
+    .signup__form {
+        border-radius: 20px;
+    }
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .grid__signup {
+        grid-template-columns: 1fr;
+    }
+
+    .signup__form {
+        border-radius: 20px;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .grid__signup {
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+    }
+
+    .signup__form {
+        border-radius: 0;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 50px 0;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
