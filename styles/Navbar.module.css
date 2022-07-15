@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .navlinkleft {
         color: white !important;
         margin-right: 35px;
@@ -43,10 +43,10 @@
     .navLogin {
         background-color: white;
         color: black !important;
-        /* border-radius: 3rem; */
+
         font-weight: bold;
         float: right;
-        /* display: inline-block; */
+
         margin-bottom: 5px;
     }
 }
@@ -68,7 +68,7 @@
         font-weight: bold;
         float: right;
         margin-bottom: 5px;
-        /* display: inline-block; */
+
     }
 }
 
@@ -82,5 +82,124 @@
 
 .activeLink {
     border-bottom: 3px solid white;
-    /* width: 10%; */
+} */
+
+.background {
+    background-color: rgba(52, 51, 51, 1);
+}
+
+.nav__item {
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgba(166, 166, 166, 1);
+}
+
+.nav__item:hover {
+    color: rgba(176, 0, 0, 1)
+}
+
+.nav__item__login {
+    background-color: rgba(217, 217, 217, 0.14);
+    border-radius: 8px;
+    padding: 3px 10px !important;
+}
+
+.nav__item__register {
+    background-color: rgba(176, 0, 0, 1);
+    border-radius: 8px;
+    color: white;
+    padding: 3px 20px !important;
+}
+
+.nav__item__register:hover {
+    color: rgba(166, 166, 166, 1)
+}
+
+/* SWITCH */
+.toggle {
+    --width: 70px;
+    --height: calc(var(--width) / 3);
+
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: var(--height);
+    cursor: pointer;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: #ccc;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--height));
+    height: calc(var(--height));
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked+.slider {
+    background-color: rgba(176, 0, 0, 1);
+}
+
+.toggle input:checked+.slider::before {
+    transform: translateX(calc(var(--width) - var(--height)));
+}
+
+.toggle .labels {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::after {
+    content: attr(data-off);
+    position: absolute;
+    right: 5px;
+    color: #4d4d4d;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::before {
+    content: attr(data-on);
+    position: absolute;
+    left: 5px;
+    color: #ffffff;
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked~.labels::after {
+    opacity: 0;
+}
+
+.toggle input:checked~.labels::before {
+    opacity: 1;
 }

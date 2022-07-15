@@ -1,0 +1,157 @@
+.container {
+    background-color: rgba(52, 51, 51, 1);
+    padding: 50px 10%;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+}
+
+.content {
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container__gift {
+    padding: 0 39%;
+}
+
+.gift {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.gridMaterials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.gridMaterialsItem img {
+    width: 100%;
+}
+
+.gridMaterialsItem button {
+    background-color: rgba(146, 12, 12, 1);
+    border: none;
+    border-radius: 10px;
+    padding: 3px 30px;
+    color: white;
+}
+
+.gridMaterialsItem p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tarimaFoto {
+    grid-area: tarimaFoto;
+}
+
+.tarimaTexto {
+    grid-area: tarimaTexto;
+}
+
+.emplayeFoto {
+    grid-area: emplayeFoto;
+}
+
+.emplayeTexto {
+    grid-area: emplayeTexto;
+}
+
+.foamFoto {
+    grid-area: foamFoto;
+}
+
+.foamTexto {
+    grid-area: foamTexto;
+}
+
+.cartonFoto {
+    grid-area: cartonFoto;
+}
+
+.cartonTexto {
+    grid-area: cartonTexto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .gridMaterials {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tarimaFoto"
+            "tarimaTexto"
+            "emplayeFoto"
+            "emplayeTexto"
+            "foamFoto"
+            "foamTexto"
+            "cartonFoto"
+            "cartonTexto"
+        ;
+    }
+
+    .container__gift {
+        padding: 0 11%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .gridMaterials {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "tarimaFoto emplayeFoto"
+            "tarimaTexto emplayeTexto"
+            "foamFoto cartonFoto"
+            "foamTexto cartonTexto"
+        ;
+    }
+
+    .container__gift {
+        padding: 0 26%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .gridMaterials {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "tarimaFoto emplayeFoto foamFoto cartonFoto"
+            "tarimaTexto emplayeTexto foamTexto cartonTexto"
+        ;
+    }
+
+    .container__gift {
+        padding: 0 39%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

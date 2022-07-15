@@ -1,0 +1,169 @@
+.background__gray {
+    background-color: rgba(52, 51, 51, 1);
+    padding: 50px 10%;
+}
+
+.title {
+    color: rgba(218, 87, 87, 1);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: rgba(218, 87, 87, 1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content {
+    color: rgba(245, 245, 245, 1);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.grid__process {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1.5fr;
+    grid-template-rows: max-content;
+    row-gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.productionImage {
+    grid-area: productionImage;
+}
+
+.productionText {
+    grid-area: productionText;
+}
+
+.cartImage {
+    grid-area: cartImage;
+}
+
+.cartText {
+    grid-area: cartText;
+}
+
+.truckImage {
+    grid-area: truckImage;
+}
+
+.truckText {
+    grid-area: truckText;
+}
+
+.divider__down {
+    grid-area: divider__down;
+}
+
+.divider__up {
+    grid-area: divider__up;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grid__process {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "productionImage"
+            "productionText"
+            "cartImage"
+            "cartText"
+            "truckImage"
+            "truckText"
+        ;
+    }
+
+    .divider__down {
+        display: none;
+    }
+
+    .divider__up {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .grid__process {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "productionImage"
+            "productionText"
+            "cartImage"
+            "cartText"
+            "truckImage"
+            "truckText"
+        ;
+    }
+
+    .divider__down {
+        display: none;
+    }
+
+    .divider__up {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid__process {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "productionImage"
+            "productionText"
+            "cartImage"
+            "cartText"
+            "truckImage"
+            "truckText"
+        ;
+    }
+
+    .divider__down {
+        display: none;
+    }
+
+    .divider__up {
+        display: none;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid__process {
+        grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1.5fr;
+        grid-template-areas:
+            "productionImage divider__up cartImage divider__down truckImage"
+            "productionText . cartText . truckText"
+        ;
+    }
+
+    .divider__down {
+        display: block;
+    }
+
+    .divider__up {
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

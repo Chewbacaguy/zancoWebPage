@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Crimson Pro';
+    font-family: 'Inter';
     color: var(--color-dark);
     line-height: 1.7;
     background: var(--color-white);
@@ -312,7 +312,7 @@ nav {
 }
 
 #contact {
-    padding-top: 10rem;
+    padding: 50px 0;
 }
 
 #contact .container {

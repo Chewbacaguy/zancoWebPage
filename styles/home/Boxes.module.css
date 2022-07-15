@@ -1,0 +1,62 @@
+.container {
+    padding: 30px 25%;
+    text-align: center;
+}
+
+.pill {
+    background-color: rgba(82, 82, 82, 1);
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    border-radius: 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pill {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 30px 10%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .pill {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 30px 10%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pill {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 30px 15%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .pill {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 30px 25%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,125 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login__card {
+    background-color: rgba(176, 0, 0, 1);
+    border-radius: 20px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    width: 35%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.login__input {
+    margin: 3px 0;
+    border: none;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.login__button {
+    border: none;
+    border-radius: 20px;
+    padding: 3px 40px;
+}
+
+.text__auth {
+    color: white;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.social__auth__button {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 0px 10px;
+}
+
+.link__register {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login__card {
+        width: 75%;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .login__input {
+        width: 80%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .login__card {
+        width: 70%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .login__input {
+        width: 75%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .login__card {
+        width: 50%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .login__input {
+        width: 70%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .login__card {
+        width: 35%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .login__input {
+        width: 70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .login__card {
+        width: 30%;
+    }
+}
