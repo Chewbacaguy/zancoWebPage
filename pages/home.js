@@ -1,6 +1,4 @@
 import LayoutUser from '../components/layout_user'
-import styles from '../styles/Home.module.css'
-import { Icon } from '@iconify/react';
 
 export default function Home() {
 

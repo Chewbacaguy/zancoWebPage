@@ -1,6 +1,4 @@
 import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
-import { Icon } from '@iconify/react';
 
 export default function Packaging() {
 
@@ -67,7 +65,7 @@ export default function Packaging() {
             </section>
             {/* END ABOUT */}
 
-            
+
             {/* CLIENTS */}
             <section id='clients' className='pt-5'>
                 <h1 className={`${styles.about__title} text-center pt-5`}>PSA Adhesive Brand</h1>
