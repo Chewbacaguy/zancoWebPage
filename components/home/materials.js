@@ -66,7 +66,7 @@ export default function Materials() {
             <Slider className="mt-3" ref={setSliderRef} {...settings}>
                 {
                     cards.map((card, i) => {
-                        return (<_SliderImage img={card.img} material={card.material}></_SliderImage>)
+                        return (<_SliderImage img={card.img} key={i} material={card.material}></_SliderImage>)
                     })
                 }
             </Slider>
