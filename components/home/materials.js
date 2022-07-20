@@ -55,30 +55,31 @@ export default function Materials() {
     ]
 
     return (
-        <div className={styles.container}>
-            <div className={styles.grid__title__arrows}>
-                <span className={styles.title}>¡Explora los materiales!</span>
-                <div className={styles.grid__arrows}>
-                    <button className={styles.arrow} onClick={() => sliderRef?.slickPrev()}> {'<'} </button>
-                    <button className={styles.arrow} onClick={() => sliderRef?.slickNext()}> {'>'} </button>
+        <div className={styles.flex__container}>
+            <div className={styles.container}>
+                <div className={styles.grid__title__arrows}>
+                    <span className={styles.title}>¡Explora los materiales!</span>
+                    <div className={styles.grid__arrows}>
+                        <button className={styles.arrow} onClick={() => sliderRef?.slickPrev()}> {'<'} </button>
+                        <button className={styles.arrow} onClick={() => sliderRef?.slickNext()}> {'>'} </button>
+                    </div>
                 </div>
-            </div>
-            <Slider className="mt-3" ref={setSliderRef} {...settings}>
-                {
-                    cards.map((card, i) => {
-                        return (<_SliderImage img={card.img} key={i} material={card.material}></_SliderImage>)
-                    })
-                }
-            </Slider>
-
-            <div className='text-center my-4'>
-                {
-                    cards.map((card, i) => {
-                        return (<button className={styles.button__material} key={i} onClick={() => sliderRef?.slickGoTo(i)}>{card.material}</button>)
-                    })
-                }
-            </div>
-        </div >
+                <Slider className="mt-3" ref={setSliderRef} {...settings}>
+                    {
+                        cards.map((card, i) => {
+                            return (<_SliderImage img={card.img} key={i} material={card.material}></_SliderImage>)
+                        })
+                    }
+                </Slider>
+                <div className='text-center my-4'>
+                    {
+                        cards.map((card, i) => {
+                            return (<button className={styles.button__material} key={i} onClick={() => sliderRef?.slickGoTo(i)}>{card.material}</button>)
+                        })
+                    }
+                </div>
+            </div >
+        </div>
     );
 }
 

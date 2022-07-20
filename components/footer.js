@@ -1,7 +1,17 @@
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
+import en from '../locales/en';
+import es from '../locales/es';
+import { useRouter } from 'next/router';
+
 
 export default function Footer() {
+
+    const router = useRouter();
+
+    const locale = router.locale;
+    console.log(locale);
+    const lang = locale === 'es' ? es : en;
 
     return (
         <footer>
@@ -10,24 +20,26 @@ export default function Footer() {
                 <div className="row row-cols-1 row-cols-lg-4 g-5 text-white">
                     <div className="col-lg">
                         <p style={{ fontWeight: 'bold' }}>
-                            <a className="footer__link" href="/">Zanco</a>
+                            <Link href="/">
+                                <a className="footer__link" >Zanco</a>
+                            </Link>
                         </p>
                         <p></p>
                         <p>It&apos;s our job to take care of your packaging necesities.</p>
 
-                        <div className="footer__subscribe">
+                        {/* <div className="footer__subscribe">
                             <input type="email" placeholder="Enter Email" required />
                             <button type="submit"> <i className="uil uil-arrow-right"></i> </button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-lg ps-5">
                         <p style={{ fontWeight: 'bold' }}>Permalinks</p>
                         <ul className="permalinks">
-                            <li> <Link href="#"><a> Home</a></Link></li>
-                            <li> <Link href="#"><a> About</a></Link></li>
-                            <li> <Link href="#"><a> Testimonials</a></Link></li>
-                            <li> <Link href="#"><a> FAQs</a></Link></li>
-                            <li> <Link href="#"><a> Contact</a></Link></li>
+                            <li> <Link href="/"><a>{lang.navHome}</a></Link></li>
+                            <li> <Link href="/about"><a>{lang.navAbout}</a></Link></li>
+                            <li> <Link href="/contact"><a>{lang.navContact}</a></Link></li>
+                            <li> <Link href="/sign_in"><a>{lang.navLogin}</a></Link></li>
+                            <li> <Link href="/sign_up"><a>{lang.navRegister}</a></Link></li>
                         </ul>
                     </div>
                     <div className="col-lg ps-5">

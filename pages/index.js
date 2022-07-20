@@ -10,13 +10,27 @@ import WhatWeDo from "../components/home/what_we_do";
 export default function NewIndex() {
     return (
         <Layout>
-            <Home></Home>
-            <Assemble></Assemble>
-            <Boxes></Boxes>
-            <WhyZanco></WhyZanco>
-            <Materials></Materials>
-            <Signup></Signup>
-            <WhatWeDo></WhatWeDo>
+            <div id="home">
+                <Home></Home>
+            </div>
+            <div id="assemble">
+                <Assemble></Assemble>
+            </div>
+            <div id="boxes">
+                <Boxes></Boxes>
+            </div>
+            <div id="whyzanco">
+                <WhyZanco></WhyZanco>
+            </div>
+            <div id="materials">
+                <Materials></Materials>
+            </div>
+            <div id="signup">
+                <Signup></Signup>
+            </div>
+            <div id="whatwedo">
+                <WhatWeDo></WhatWeDo>
+            </div>
         </Layout>
     );
 }

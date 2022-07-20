@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/home/Home.module.css"
 import SocialNetworks from "./social_networks";
 
@@ -11,7 +12,9 @@ export default function Home() {
             <div className={styles.container__packaging}>
                 <p className={styles.container__title}>Integramos empaque <br /> para tu manufactura</p>
                 <br />
-                <button className={styles.container__button}>Haz tu pedido ↓</button>
+                <Link href="/#assemble">
+                    <button className={styles.container__button}>Haz tu pedido ↓</button>
+                </Link>
             </div>
         </div>
     );

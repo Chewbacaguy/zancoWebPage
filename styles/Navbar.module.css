@@ -1,89 +1,3 @@
-/* @media (min-width: 1200px) {
-    .navlinkleft {
-        color: white !important;
-        margin-right: 35px;
-    }
-
-    .navlinkright {
-        color: white !important;
-        margin-left: 35px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .navlinkleft {
-        color: white !important;
-        margin-right: 10px;
-    }
-
-    .navlinkright {
-        color: white !important;
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 991px) {
-    .navlinkleft {
-        color: white !important;
-        margin-right: 0px;
-        text-align: end;
-    }
-
-    .navlinkright {
-        color: white !important;
-        margin-left: 0px;
-        text-align: end;
-    }
-
-
-    .navbarBg {
-        background: black !important;
-    }
-
-    .navLogin {
-        background-color: white;
-        color: black !important;
-
-        font-weight: bold;
-        float: right;
-
-        margin-bottom: 5px;
-    }
-}
-
-@media (min-width: 992px) {
-    .abs {
-        position: absolute;
-        width: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .navLogin {
-        background-color: white;
-        color: black !important;
-        border-radius: 3rem;
-        font-weight: bold;
-        float: right;
-        margin-bottom: 5px;
-
-    }
-}
-
-
-.windowscroll {
-    background: black !important;
-    border-bottom: 1px solid white !important;
-    box-shadow: 0 1rem 1 rem #737373 !important;
-}
-
-
-.activeLink {
-    border-bottom: 3px solid white;
-} */
-
 .background {
     background-color: rgba(52, 51, 51, 1);
 }
@@ -92,6 +6,8 @@
     text-decoration: none;
     margin: 0 10px;
     color: rgba(166, 166, 166, 1);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .nav__item:hover {

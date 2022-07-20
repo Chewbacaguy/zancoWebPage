@@ -18,6 +18,83 @@ export default function Assemble() {
 
     return (
         <div className={styles.container}>
+
+            {/* MODAL FLOORING */}
+            <div className="modal fade" id="formModalFlooring" tabIndex="-1" aria-labelledby="formModalFlooringLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalFlooringLabel">Tarimas</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Tarimas/formperma/gXuD0csw0ur6aWOHjVTSB1SCEBEy6MkyZFvQADT8dgA'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL FLOORING */}
+
+            {/* MODAL PLASTERS */}
+            <div className="modal fade" id="formModalPlasters" tabIndex="-1" aria-labelledby="formModalPlastersLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalPlastersLabel">Polietileno</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Polietileno/formperma/A4e4JqaxF8BnK-zyjDIQSzHey7lalHw5_un7afR4OsY'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL PLASTERS */}
+
+            {/* MODAL FOAMS */}
+            <div className="modal fade" id="formModalFoams" tabIndex="-1" aria-labelledby="formModalFoamsLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalFoamsLabel">Foams y derivados</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Foamysusderivados/formperma/UcttXzN41nM9I10v-A49DUaWEAvXZSpnoPyf8xDwytk'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL FOAMS */}
+
+            {/* MODAL CARDBOARDS */}
+            <div className="modal fade" id="formModalCardboards" tabIndex="-1" aria-labelledby="formModalCardboardsLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="formModalCardboardsLabel">Cartones</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <iframe frameBorder="0" style={{ height: '500px', width: '99%', border: 'none' }} src='https://forms.zohopublic.com/santiagotorres/form/Cartones/formperma/7MKwAVASyIBnzsQwtpndnU3HpefX9-C0yvO5ViFiePw'></iframe>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END MODAL CARDBOARDS */}
+
             <p className={styles.title}>Integra tus materiales</p>
             <p className={styles.content}>Selecciona el tipo de producto y llena el formulario</p>
             <p className={styles.content}>¡El resto lo hacemos nosotros!</p>
@@ -47,19 +124,19 @@ export default function Assemble() {
                     <img className={``} src="/img/box.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.tarimaTexto}`}>
-                    <button className={``}>Agregar +</button>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalFlooring" className={``}>Agregar +</button>
                     <p className='mt-2'>Tarimas</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.emplayeTexto}`}>
-                    <button className={``}>Agregar +</button>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalPlasters" className={``}>Agregar +</button>
                     <p className='mt-2'>Emplaye</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.foamTexto}`}>
-                    <button className={``}>Agregar +</button>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalFoams" className={``}>Agregar +</button>
                     <p className='mt-2'>Foam y derivados</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.cartonTexto}`}>
-                    <button className={``}>Agregar +</button>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalCardboards" className={``}>Agregar +</button>
                     <p className='mt-2'>Cartones</p>
                 </div>
             </div>

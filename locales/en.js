@@ -1,16 +1,54 @@
 export default {
-    navAbout: 'About',
+    // navbar
+    navHome: 'Home',
+    navAbout: 'About us',
     navContact: 'Contact',
     navLogin: 'Login',
-    homeMessage: 'At Zanco we integrate all the packaging needs with the goal of creating efficient industrial manufacturing. We understand the importance of the quality that each product deserves, from the time it leaves the warehouse, until it reaches its destination',
-    homeWhatWeDoQuestion: 'What we do',
-    homeWhatWeDoAnswer: '<br>We understand the logistical difficulties involved in integrating the respective materials necessary to pack any product.<br><br>That is why our integrator system is in charge of managing the needs of your manufacturing procedures, in order to facilitate all the single channel packing operations.',
-    homeHowDoesItWorkQuestion: 'How does it work?',
-    homeCoffe: 'It\'s easy as ordering a coffee!',
-    homeHowDoesItWorkAnswer: 'Everything revolves around the digital brain called Integral Engine (IE)',
-    homeRegistryStep1: 'Choose your area of interest',
-    homeRegistryStep2: 'Each area has a simple forms where you can register a new packaging order of a specific category.',
-    homeRegistryStep3: 'Each order will be registered within our system where you will be able check the status of each orderd, it\'s progress and follow-ups.',
-    homeRegistryStep4: 'You will be assigned an advisor with whom you can negotiate and review the progress of each order directly.',
-    homeCEOMessage: 'Streamlining processes is our <span class=\'color: rgba(130, 130, 130, 1);\'>specialty</span>, at Zanco we understand that packaging is an <span className={`${styles.quoteHighlight}`}> important</span> and <span class=\'color: rgba(130, 130, 130, 1);\'>necessary</span> need for all manufacturing.'
+    navRegister: 'Register',
+
+    // home 
+    homePackage: 'Packaging for manufacturing done right',
+    homeOrder: 'Order now ↓',
+
+    // assemble
+    assembleIntegrate: 'Integrate your materials',
+    assembleSelect1: 'Select the type of product and fill out the form.',
+    assembleSelect2: 'We do the rest!',
+    assembleIM: 'Integral Motor (I.M.)',
+    assembleCrates: 'Crates',
+    assemblePlastics: 'Plastics',
+    assembleFoam: 'Foams and Derivates',
+    assembleCardboards: 'Cardboards',
+    assembleAdd: 'Add+',
+
+    // boxes
+    boxesMessage: 'We | simplify | everything',
+
+    // why zanco
+    whyZancoQuestion: 'Why choose Zanco?',
+    whyZancoBullet1: 'We solve logistics processes for the acquisition of raw materials and specific industrial projects.',
+    whyZancoBullet2: 'We automate the  operation through our digital operating system "M.I."',
+    whyZancoBullet3: 'We offer competitive prices and propose exclusive offers according to the client\'s needs.',
+
+    // materials
+    materialsTitle: 'Get to know the materials!',
+    materialsCrates: 'Crates',
+    materialsPlastics: 'Plastics',
+    materialsFoams: 'Foam and derivates',
+    materialsCardboards: 'Cardboards',
+    materialsSeeMore: 'More',
+
+    // signup 
+    signupTitle: 'Haven’t signed up yet?',
+    signupContent: 'By registering you will be able to monitor all your projects in real time, you will have access to the statistics and graphs of the market in the industry and you will have direct access to the digital operating system.',
+    signupRegister: 'Register',
+
+    // what we do
+    whatWeDoTitle: 'Our process',
+    whatWeDoStep1: '1. Production',
+    whatWeDoStep2: '2. Integration',
+    whatWeDoStep3: '3. Delivery',
+    whatWeDoText1: 'We verify and assign the project. All hands on deck!',
+    whatWeDoText2: 'We coordinate the operation and logistics.',
+    whatWeDoText3: 'Hard work pays off. We successfully finish your order.',
 }
