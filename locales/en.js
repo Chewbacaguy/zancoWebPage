@@ -7,7 +7,8 @@ export default {
     navRegister: 'Register',
 
     // home 
-    homePackage: 'Packaging for manufacturing done right',
+    homePackage1: 'Packaging for ',
+    homePackage2: 'manufacturing done right',
     homeOrder: 'Order now ↓',
 
     // assemble

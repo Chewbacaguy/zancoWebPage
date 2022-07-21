@@ -1,12 +1,15 @@
 .flex__container {
-    /* display: flex; */
-    min-height: 100vh;
-    justify-content: center;
-    /* align-items: center; */
+    height: 100vh;
+    position: relative;
 }
 
 .container {
     padding: 50px 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .title {
@@ -18,8 +21,8 @@
 .grid__title__arrows {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    /* justify-content: center; */
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .grid__arrows {

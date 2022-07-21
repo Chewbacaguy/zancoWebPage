@@ -33,19 +33,19 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
                         <Link href='/'>
-                            <a className={styles.nav__item} aria-current="page">Inicio</a>
+                            <a className={styles.nav__item} aria-current="page">{lang.navHome}</a>
                         </Link>
                         <Link href='/about'>
-                            <a className={styles.nav__item}>Nosotros</a>
+                            <a className={styles.nav__item}>{lang.navAbout}</a>
                         </Link>
                         <Link href='/contact'>
-                            <a className={styles.nav__item}>Contacto</a>
+                            <a className={styles.nav__item}>{lang.navContact}</a>
                         </Link>
                         <Link href='/sign_in'>
-                            <a className={`${styles.nav__item} ${styles.nav__item__login}`}>Iniciar sesión</a>
+                            <a className={`${styles.nav__item} ${styles.nav__item__login}`}>{lang.navLogin}</a>
                         </Link>
                         <Link href='/sign_up'>
-                            <a className={`${styles.nav__item} ${styles.nav__item__register}`}>Registrarse</a>
+                            <a className={`${styles.nav__item} ${styles.nav__item__register}`}>{lang.navRegister}</a>
                         </Link>
                         <a className={styles.nav__item} >
                             <label className={styles.toggle}>

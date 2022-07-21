@@ -7,6 +7,8 @@ import Materials from "../components/home/materials";
 import Signup from "../components/home/signup";
 import WhatWeDo from "../components/home/what_we_do";
 
+import styles from '../styles/Index.module.css';
+
 export default function NewIndex() {
     return (
         <Layout>

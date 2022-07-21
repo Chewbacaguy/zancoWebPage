@@ -32,9 +32,7 @@
 
 .gift {
     width: 100%;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    border-radius: 20px;
 }
 
 .gridMaterials {
@@ -48,6 +46,8 @@
 
 .gridMaterialsItem img {
     width: 100%;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 .gridMaterialsItem button {

@@ -6,9 +6,17 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import styles from '../../styles/home/Materials.module.css';
 
+import { useRouter } from 'next/router';
+import en from '../../locales/en';
+import es from '../../locales/es';
+
 export default function Materials() {
-    const [slideIndex, setSlideIndex] = useState(0);
     const [sliderRef, setSliderRef] = useState(null)
+
+    const router = useRouter();
+
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
 
     const settings = {
         dots: false,
@@ -16,7 +24,6 @@ export default function Materials() {
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false,
-        // beforeChange: (current, next) => setSlideIndex(next),
         responsive: [
             {
                 breakpoint: 600,
@@ -38,19 +45,19 @@ export default function Materials() {
     const cards = [
         {
             img: '/img/huacales.png',
-            material: 'Tarimas'
+            material: lang.materialsCrates
         },
         {
             img: '/img/emplaye.png',
-            material: 'Foams y derivados'
+            material: lang.materialsFoams
         },
         {
             img: '/img/emplaye.png',
-            material: 'Emplaye'
+            material: lang.materialsPlastics
         },
         {
             img: '/img/cartones.png',
-            material: 'Cartones'
+            material: lang.materialsCardboards
         },
     ]
 
@@ -58,7 +65,7 @@ export default function Materials() {
         <div className={styles.flex__container}>
             <div className={styles.container}>
                 <div className={styles.grid__title__arrows}>
-                    <span className={styles.title}>¡Explora los materiales!</span>
+                    <span className={styles.title}>{lang.materialsTitle}</span>
                     <div className={styles.grid__arrows}>
                         <button className={styles.arrow} onClick={() => sliderRef?.slickPrev()}> {'<'} </button>
                         <button className={styles.arrow} onClick={() => sliderRef?.slickNext()}> {'>'} </button>
@@ -84,6 +91,11 @@ export default function Materials() {
 }
 
 function _SliderImage({ img, material }) {
+    const router = useRouter();
+
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
+
     return (
         <div>
             <div className={styles.img__fill}>
@@ -92,7 +104,7 @@ function _SliderImage({ img, material }) {
                     {material}
                 </div>
                 <div className={styles.button}>
-                    <button>Ver más</button>
+                    <button>{lang.materialsSeeMore}</button>
                 </div>
             </div>
         </div>

@@ -1,19 +1,28 @@
 import styles from '../../styles/home/WhyZanco.module.css'
 
+import { useRouter } from 'next/router';
+import en from '../../locales/en';
+import es from '../../locales/es';
+
 export default function WhyZanco() {
+    const router = useRouter();
+
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
+
     return (
         <div className={styles.flex__container}>
             <div className={styles.background__gray}>
                 <div className={styles.grid__title__image}>
                     <div>
-                        <p className={styles.title}>¿Por qué con Zanco?</p>
+                        <p className={styles.title}>{lang.whyZancoQuestion}</p>
                         <br />
                         <ul className={styles.list__image__red__check}>
-                            <li className={styles.list__item}>Solucionamos procesos logísticos para la adquisición de materiales y proyectos industriales.</li>
+                            <li className={styles.list__item}>{lang.whyZancoBullet1}</li>
                             <br />
-                            <li className={styles.list__item}>Automatizamos la operación integral mediante nuestro sistema operativo digital “M.I” </li>
+                            <li className={styles.list__item}>{lang.whyZancoBullet2}</li>
                             <br />
-                            <li className={styles.list__item}>Competimos en precios y proponemos ofertas exclusivas de acuerdo a la necesidad del cliente.</li>
+                            <li className={styles.list__item}>{lang.whyZancoBullet3}</li>
                         </ul>
                     </div>
                     <div>

@@ -1,5 +1,13 @@
-.background__gray {
+.flex__container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(52, 51, 51, 1);
+}
+
+
+.background__gray {
     padding: 50px 10%;
 }
 

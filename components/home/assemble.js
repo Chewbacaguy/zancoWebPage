@@ -1,9 +1,15 @@
 import styles from '../../styles/home/Assemble.module.css';
 import React, { useState, useEffect, setState } from 'react'
 
+import { useRouter } from 'next/router';
+import en from '../../locales/en';
+import es from '../../locales/es';
 
 export default function Assemble() {
+    const router = useRouter();
 
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
     const [width, setWidth] = useState(0);
 
     useEffect(() => {
@@ -95,11 +101,11 @@ export default function Assemble() {
             </div>
             {/* END MODAL CARDBOARDS */}
 
-            <p className={styles.title}>Integra tus materiales</p>
-            <p className={styles.content}>Selecciona el tipo de producto y llena el formulario</p>
-            <p className={styles.content}>¡El resto lo hacemos nosotros!</p>
+            <p className={styles.title}>{lang.assembleIntegrate}</p>
+            <p className={styles.content}>{lang.assembleSelect1}</p>
+            <p className={styles.content}>{lang.assembleSelect2}</p>
             <br />
-            <p className={styles.subtitle}>Motor Integral (M.I.)</p>
+            <p className={styles.subtitle}>{lang.assembleIM}</p>
             <div className={styles.container__gift}>
                 <div className='text-center'>
                     <img className={styles.gift} src="/img/gift.png" />
@@ -112,32 +118,32 @@ export default function Assemble() {
 
             <div className={`${styles.gridMaterials}`}>
                 <div className={`${styles.gridMaterialsItem} ${styles.tarimaFoto}`} data-bs-toggle="modal" data-bs-target="#formModalFlooring">
-                    <img className={``} src="/img/tarima.png" />
+                    <img className={``} src="/img/crates.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.emplayeFoto}`} data-bs-toggle="modal" data-bs-target="#formModalPlasters">
-                    <img className={``} src="/img/paper.png" />
+                    <img className={``} src="/img/plaster.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.foamFoto}`} data-bs-toggle="modal" data-bs-target="#formModalFoams">
                     <img className={``} src="/img/foam.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.cartonFoto}`} data-bs-toggle="modal" data-bs-target="#formModalCardboards">
-                    <img className={``} src="/img/box.png" />
+                    <img className={``} src="/img/cardboard.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.tarimaTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalFlooring" className={``}>Agregar +</button>
-                    <p className='mt-2'>Tarimas</p>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalFlooring" className={``}>{lang.assembleAdd}</button>
+                    <p className='mt-2'>{lang.assembleCrates}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.emplayeTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalPlasters" className={``}>Agregar +</button>
-                    <p className='mt-2'>Emplaye</p>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalPlasters" className={``}>{lang.assembleAdd}</button>
+                    <p className='mt-2'>{lang.assemblePlastics}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.foamTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalFoams" className={``}>Agregar +</button>
-                    <p className='mt-2'>Foam y derivados</p>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalFoams" className={``}>{lang.assembleAdd}</button>
+                    <p className='mt-2'>{lang.assembleFoam}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.cartonTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalCardboards" className={``}>Agregar +</button>
-                    <p className='mt-2'>Cartones</p>
+                    <button data-bs-toggle="modal" data-bs-target="#formModalCardboards" className={``}>{lang.assembleAdd}</button>
+                    <p className='mt-2'>{lang.assembleCardboards}</p>
                 </div>
             </div>
         </div>
