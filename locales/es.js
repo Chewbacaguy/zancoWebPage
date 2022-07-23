@@ -52,4 +52,25 @@ export default {
     whatWeDoText1: 'Se da luz verde al proyecto. ¡Manos a la obra!',
     whatWeDoText2: 'Coordinación de operación y logística.',
     whatWeDoText3: '¡Abracadabra! Finalizamos tu pedido con éxito. ',
+
+    // login
+    loginTitle: 'Iniciar Sesión',
+    loginButton: 'Ingresar',
+    loginEmail: 'Correo',
+    loginPassword: 'Contraseña',
+    loginOr: 'o ingresa con',
+    loginQuestion: '¿Aun no tienes usuario?',
+    loginRegister: 'Regístrate',
+
+    // signup
+    registerTitle: 'Registro',
+    registerButton: 'Registrarse',
+    registerCompany: 'Nombre de empresa',
+    registerEmail: 'Correo',
+    registerPassword: 'Contraseña',
+    registerConfirmPassword: 'Confirma contraseña',
+    registerArea: 'Área de interés',
+    registerOr: 'o ingresa con',
+    registerQuestion: '¿Ya tienes cuenta?',
+    registerLogin: 'Inicia sesión',
 }

@@ -3,7 +3,17 @@ import styles from '../styles/SignUp.module.css'
 import Link from "next/link";
 import SocialNetworks from "../components/home/social_networks";
 
+import en from '../locales/en';
+import es from '../locales/es';
+import { useRouter } from 'next/router';
+
 export default function SignUp() {
+
+    const router = useRouter();
+
+    const locale = router.locale;
+    const lang = locale === 'es' ? es : en;
+
     return (
         <Layout>
             <SocialNetworks></SocialNetworks>
@@ -12,24 +22,24 @@ export default function SignUp() {
                     <div className={styles.signup__image}></div>
                     <div className={styles.signup__form}>
                         <img src="/img/logo_zanco.png" alt="" />
-                        <p className={styles.title}>Registro</p>
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder="Nombre de empresa" />
+                        <p className={styles.title}>{lang.registerTitle}</p>
+                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerCompany} />
                         <br />
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder="Correo" />
+                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerEmail} />
                         <br />
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder="Contraseña" />
+                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerPassword} />
                         <br />
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder="Confirma contraseña" />
+                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerConfirmPassword} />
                         <br />
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder="Areas de interes" />
+                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerArea} />
                         <br />
                         <br />
                         <button className={styles.signup__button}>
-                            Registrarse
+                            {lang.registerButton}
                         </button>
                         <br />
                         <p className={styles.text__auth}>
-                            o ingresar con
+                            {lang.registerOr}
                         </p>
                         <button className={styles.social__auth__button}>
                             <img src="/img/google.png" alt="" />
@@ -38,10 +48,10 @@ export default function SignUp() {
                             <img src="/img/facebook.png" alt="" />
                         </button>
                         <p className={styles.text__auth}>
-                            ¿Ya tienes cuenta?
+                            {lang.registerQuestion}
                             <br />
                             <Link href='/sign_in'>
-                                <a className={styles.link__register}>Inicia sesión</a>
+                                <a className={styles.link__register}>{lang.registerLogin}</a>
                             </Link>
                         </p>
                     </div>

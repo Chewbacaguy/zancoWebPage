@@ -16,7 +16,7 @@ export default function Navbar() {
     const changeLanguage = (e) => {
         const locale = e.target.checked ? 'es' : 'en';
         console.log(locale);
-        router.push('/', '/', { locale });
+        router.push(router.pathname, router.asPath, { locale });
     }
 
     return (

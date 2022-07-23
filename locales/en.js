@@ -52,4 +52,25 @@ export default {
     whatWeDoText1: 'We verify and assign the project. All hands on deck!',
     whatWeDoText2: 'We coordinate the operation and logistics.',
     whatWeDoText3: 'Hard work pays off. We successfully finish your order.',
+
+    // login
+    loginTitle: 'Sign In',
+    loginButton: 'Sign In',
+    loginEmail: 'Email',
+    loginPassword: 'Password',
+    loginOr: 'or login with',
+    loginQuestion: 'Not registered yet?',
+    loginRegister: 'Register',
+
+    // signup
+    registerTitle: 'Register',
+    registerButton: 'Register',
+    registerCompany: 'Company name',
+    registerEmail: 'Email',
+    registerPassword: 'Password',
+    registerConfirmPassword: 'Confirm password',
+    registerArea: 'Area of interest',
+    registerOr: 'or register with',
+    registerQuestion: 'Already have an account?',
+    registerLogin: 'Sign in',
 }

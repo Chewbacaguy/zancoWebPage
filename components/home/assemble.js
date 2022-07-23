@@ -113,7 +113,11 @@ export default function Assemble() {
             </div>
 
             <div className='text-center'>
-                <img className={`${styles.flow__chart}`} src="/img/flow_chart.png" style={{ height: '75px', width: '75%' }} />
+                {
+                    width <= 600 ?
+                        <img className='mt-3' src="/img/down_arrow.png" style={{ height: '75px', width: '3%' }} />
+                        : width > 600 && width < 768 ? <img className={`${styles.flow__chart} mt-3`} src="/img/flow_chart2.png" style={{ height: '75px', width: '55%' }} /> : <img className={`${styles.flow__chart} mt-3`} src="/img/flow_chart.png" style={{ height: '75px', width: '75%' }} />
+                }
             </div>
 
             <div className={`${styles.gridMaterials}`}>
