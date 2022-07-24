@@ -73,4 +73,10 @@ export default {
     registerOr: 'o ingresa con',
     registerQuestion: '¿Ya tienes cuenta?',
     registerLogin: 'Inicia sesión',
+    registerSelectOption1: 'Cartones y corrugados',
+    registerSelectOption2: 'Hielo seco',
+    registerSelectOption3: 'Foam',
+    registerSelectOption4: 'Emplayes',
+    registerSelectOption5: 'Tarimas/huacales',
+    registerSelectOption6: 'Otro',
 }

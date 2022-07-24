@@ -73,4 +73,10 @@ export default {
     registerOr: 'or register with',
     registerQuestion: 'Already have an account?',
     registerLogin: 'Sign in',
+    registerSelectOption1: 'Cardboards',
+    registerSelectOption2: 'Dry ice',
+    registerSelectOption3: 'Foams',
+    registerSelectOption4: 'Plasters',
+    registerSelectOption5: 'Crates',
+    registerSelectOption6: 'Other',
 }

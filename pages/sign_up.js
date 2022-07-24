@@ -6,8 +6,11 @@ import SocialNetworks from "../components/home/social_networks";
 import en from '../locales/en';
 import es from '../locales/es';
 import { useRouter } from 'next/router';
+import { useState } from "react";
 
 export default function SignUp() {
+
+    const [value, setValue] = useState("initial");
 
     const router = useRouter();
 
@@ -31,7 +34,20 @@ export default function SignUp() {
                         <br />
                         <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerConfirmPassword} />
                         <br />
-                        <input className={styles.signup__input} type="text" name="" id="" placeholder={lang.registerArea} />
+                        <select
+                            className={styles.signup__input}
+                            onChange={(e) =>
+                                setValue(e.target.value)
+                            }
+                            style={{ color: value == "initial" ? 'gray' : "black" }}>
+                            <option value="initial" selected disabled>{lang.registerArea}</option>
+                            <option value="">{lang.registerSelectOption1}</option>
+                            <option value="">{lang.registerSelectOption2}</option>
+                            <option value="">{lang.registerSelectOption3}</option>
+                            <option value="">{lang.registerSelectOption4}</option>
+                            <option value="">{lang.registerSelectOption5}</option>
+                            <option value="">{lang.registerSelectOption6}</option>
+                        </select>
                         <br />
                         <br />
                         <button className={styles.signup__button}>
