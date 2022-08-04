@@ -24,18 +24,19 @@ export default {
 
     // boxes
     boxesMessage: 'We | simplify | everything',
+    boxesText: 'The acquisition of materials for packing and packaging of each manufactured product is essential in the industry. We realize the logistical difficulties involved in the production, quality and fulfillment of each project. Don\'t waste time, we\'ll take care of it.',
 
     // why zanco
     whyZancoQuestion: 'Why choose Zanco?',
-    whyZancoBullet1: 'We solve logistics processes for the acquisition of raw materials and specific industrial projects.',
-    whyZancoBullet2: 'We automate the  operation through our digital operating system "M.I."',
+    whyZancoBullet1: 'We solve logistics processes for the acquisition of packing and packaging materials.',
+    whyZancoBullet2: 'We automate the integration operation through our digital operating system "I.M."',
     whyZancoBullet3: 'We offer competitive prices and propose exclusive offers according to the client\'s needs.',
 
     // materials
     materialsTitle: 'Get to know the materials!',
     materialsCrates: 'Crates',
     materialsPlastics: 'Plastics',
-    materialsFoams: 'Foam and derivates',
+    materialsFoams: 'Foam',
     materialsCardboards: 'Cardboards',
     materialsSeeMore: 'More',
 
@@ -75,8 +76,36 @@ export default {
     registerLogin: 'Sign in',
     registerSelectOption1: 'Cardboards',
     registerSelectOption2: 'Dry ice',
-    registerSelectOption3: 'Foams',
+    registerSelectOption3: 'Foam',
     registerSelectOption4: 'Plasters',
     registerSelectOption5: 'Crates',
     registerSelectOption6: 'Other',
+
+    // about us
+    aboutUsMission: 'Mission',
+    aboutUsVision: 'Vision',
+    aboutUsMissionText: 'Facilitate the acquisition of packaging materials through the logistics process of our digital integrator system IM (Integral Motor).',
+    aboutUsVisionText: 'To become the leading company in industrial packaging distribution.',
+
+    // contact
+    contactTitle: 'Get in touch',
+    contactText: 'We\'d love to hear from your. Our friendly team is here to chat with you.',
+    contactChat: 'Chat with us',
+    contactChatText: 'Send us an email we\'ll respond shortly.',
+    contactOffice: 'Office',
+    contactOfficeText: 'Come say hello at our office HQ',
+    contactPhone: 'Phone',
+    contactPhoneText: 'Mon-Fri from 8am - 6pm',
+    contactInputName: 'Your Name',
+    contactInputEmail: 'yourname@yourcompany.com',
+    contactInputPhone: 'Phone Number',
+    contactInputMessage: 'Message',
+
+    // footer
+    footerPermalinks: 'Permalinks',
+    footerPrivacy: 'Privacy',
+    footerPrivacyPolicy: 'Privacy policy',
+    footerPrivacyTerms: 'Terms and Conditions',
+    footerPrivacyRefund: 'Refund Policy',
+    footerContactUs: 'Contact Us',
 }

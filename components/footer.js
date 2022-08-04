@@ -33,7 +33,7 @@ export default function Footer() {
                         </div> */}
                     </div>
                     <div className="col-lg ps-5">
-                        <p style={{ fontWeight: 'bold' }}>Permalinks</p>
+                        <p style={{ fontWeight: 'bold' }}>{lang.footerPermalinks}</p>
                         <ul className="permalinks">
                             <li> <Link href="/"><a>{lang.navHome}</a></Link></li>
                             <li> <Link href="/about"><a>{lang.navAbout}</a></Link></li>
@@ -43,16 +43,16 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="col-lg ps-5">
-                        <p style={{ fontWeight: 'bold' }}> Privacy</p>
+                        <p style={{ fontWeight: 'bold' }}> {lang.footerPrivacy}</p>
                         <ul className="privacy">
-                            <li><Link href="#"><a>Privacy Policy</a></Link></li>
-                            <li><Link href="#"><a>Terms and Conditions</a></Link></li>
-                            <li><Link href="#"><a>Refund Policy</a></Link></li>
+                            <li><Link href="#"><a>{lang.footerPrivacyPolicy}</a></Link></li>
+                            <li><Link href="#"><a>{lang.footerPrivacyTerms}</a></Link></li>
+                            <li><Link href="#"><a>{lang.footerPrivacyRefund}</a></Link></li>
                         </ul>
                     </div>
 
                     <div className="col-lg ps-4">
-                        <p style={{ fontWeight: 'bold' }}> Contact Us </p>
+                        <p style={{ fontWeight: 'bold' }}>{lang.footerContactUs}</p>
                         <p>
                             (+52) 81 2400 4678 <br />
                             santiago.torres@zanco.com.mx

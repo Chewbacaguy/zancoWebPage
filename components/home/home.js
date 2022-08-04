@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.container}>
             <SocialNetworks></SocialNetworks>
 
-            <img className={styles.home__img} src="/img/home.png" alt="" />
+            <img className={styles.home__img} src="/img/collage.png" alt="" />
 
             <div className={styles.container__packaging}>
                 <p className={styles.container__title}>{lang.homePackage1} <br /> {lang.homePackage2}</p>

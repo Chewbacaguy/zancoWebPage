@@ -48,7 +48,7 @@ export default function Materials() {
             material: lang.materialsCrates
         },
         {
-            img: '/img/emplaye.png',
+            img: '/img/foam_slider.png',
             material: lang.materialsFoams
         },
         {
