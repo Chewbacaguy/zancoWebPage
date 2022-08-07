@@ -108,4 +108,5 @@ export default {
     footerPrivacyTerms: 'Términos y condiciones',
     footerPrivacyRefund: 'Política de devolución',
     footerContactUs: 'Contáctanos',
+    footerSlogan: 'Nuestro trabajo es encargarnos de sus necesidades de embalaje.',
 }

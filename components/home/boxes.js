@@ -14,9 +14,11 @@ export default function Boxes() {
     return (
         <div className={styles.flex__container}>
             <div className={styles.container}>
-                <img src='/img/cajas.png' style={{ width: '100%' }} />
+                <div className={styles.grid__boxes}>
+                    <img src='/img/cajas.png' style={{ width: '100%' }} />
+                    <p className='text-center mt-3'>{lang.boxesText}</p>
+                </div>
                 <p className={`mt-4 ${styles.pill}`}>{lang.boxesMessage}</p>
-                <p className='text-center mt-3'>{lang.boxesText}</p>
             </div>
         </div>
     );

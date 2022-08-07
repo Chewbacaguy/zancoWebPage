@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.grid__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     padding: 0px 25%;
     text-align: center;
@@ -27,6 +35,10 @@
 
     .container {
         padding: 30px 10%;
+    }
+
+    .grid__boxes {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -61,9 +73,6 @@
     }
 
     .container {
-        padding: 30px 25%;
+        padding: 30px 15%;
     }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

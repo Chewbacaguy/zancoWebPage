@@ -25,7 +25,7 @@ export default function Footer() {
                             </Link>
                         </p>
                         <p></p>
-                        <p>It&apos;s our job to take care of your packaging necesities.</p>
+                        <p>{lang.footerSlogan}</p>
 
                         {/* <div className="footer__subscribe">
                             <input type="email" placeholder="Enter Email" required />

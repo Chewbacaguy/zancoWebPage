@@ -108,4 +108,5 @@ export default {
     footerPrivacyTerms: 'Terms and Conditions',
     footerPrivacyRefund: 'Refund Policy',
     footerContactUs: 'Contact Us',
+    footerSlogan: 'It\'s our job to take care of your packaging necessities.',
 }
