@@ -109,4 +109,15 @@ export default {
     footerPrivacyRefund: 'Refund Policy',
     footerContactUs: 'Contact Us',
     footerSlogan: 'It\'s our job to take care of your packaging necessities.',
+
+    // Sidebar
+    sideBarHome: 'Home',
+    sideBarNewOrder: 'New Order',
+    sideBarMyOrders: 'My Orders',
+    sideBarHelp: 'Help',
+
+    // Logged User Home
+    consultOrders: 'Consult my orders',
+    createNewOrder: 'Create a new order',
+    navLogout: 'Logout',
 }

@@ -101,7 +101,7 @@ export default {
     contactInputPhone: 'Celular',
     contactInputMessage: 'Mensaje',
 
-    //footer
+    // footer
     footerPermalinks: 'Links permanentes',
     footerPrivacy: 'Privacidad',
     footerPrivacyPolicy: 'Política de privacidad',
@@ -109,4 +109,15 @@ export default {
     footerPrivacyRefund: 'Política de devolución',
     footerContactUs: 'Contáctanos',
     footerSlogan: 'Nuestro trabajo es encargarnos de sus necesidades de embalaje.',
+
+    // Sidebar
+    sideBarHome: 'Inicio',
+    sideBarNewOrder: 'Nuevo Pedido',
+    sideBarMyOrders: 'Mis Pedidos',
+    sideBarHelp: 'Ayuda',
+
+    // Logged User Home
+    consultOrders: 'Consultar mis pedidos',
+    createNewOrder: 'Hacer un nuevo pedido',
+    navLogout: 'Cerrar Sesión',
 }
