@@ -45,6 +45,10 @@ export default {
     signupContent: 'Al registrarte podrás ver reflejado el seguimiento de todos tus proyectos en tiempo real, tendrás acceso a las estadisticas y gráficas del mercado en la industria y contarás con acceso directo al sistema operativo digital.',
     signupRegister: 'Registrarse',
 
+    // suggestionbox
+    suggestionTitle: '¿Tienes alguna sugerencia?',
+    suggestionsButtonTitle: 'Háznoslo saber',
+    
     // what we do
     whatWeDoTitle: 'Nuestro proceso',
     whatWeDoStep1: '1. Producción',

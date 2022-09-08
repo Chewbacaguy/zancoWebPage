@@ -134,19 +134,19 @@ export default function Assemble() {
                     <img className={``} src="/img/cardboard.png" />
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.tarimaTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalFlooring" className={``}>{lang.assembleAdd}</button>
+                    {/* <button data-bs-toggle="modal" data-bs-target="#formModalFlooring" className={``}>{lang.assembleAdd}</button> */}
                     <p className='mt-2'>{lang.assembleCrates}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.emplayeTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalPlasters" className={``}>{lang.assembleAdd}</button>
+                    {/* <button data-bs-toggle="modal" data-bs-target="#formModalPlasters" className={``}>{lang.assembleAdd}</button> */}
                     <p className='mt-2'>{lang.assemblePlastics}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.foamTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalFoams" className={``}>{lang.assembleAdd}</button>
+                    {/* <button data-bs-toggle="modal" data-bs-target="#formModalFoams" className={``}>{lang.assembleAdd}</button> */}
                     <p className='mt-2'>{lang.assembleFoam}</p>
                 </div>
                 <div className={`${styles.gridMaterialsItem} ${styles.cartonTexto}`}>
-                    <button data-bs-toggle="modal" data-bs-target="#formModalCardboards" className={``}>{lang.assembleAdd}</button>
+                    {/* <button data-bs-toggle="modal" data-bs-target="#formModalCardboards" className={``}>{lang.assembleAdd}</button> */}
                     <p className='mt-2'>{lang.assembleCardboards}</p>
                 </div>
             </div>

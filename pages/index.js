@@ -6,9 +6,9 @@ import WhyZanco from "../components/home/why_zanco";
 import Materials from "../components/home/materials";
 import Signup from "../components/home/signup";
 import WhatWeDo from "../components/home/what_we_do";
+import SuggestionBox from "../components/home/suggestionbox";
 
 import styles from '../styles/Index.module.css';
-
 export default function NewIndex() {
     return (
         <Layout>
@@ -32,6 +32,9 @@ export default function NewIndex() {
             </div>
             <div id="whatwedo">
                 <WhatWeDo></WhatWeDo>
+            </div>
+            <div id="suggestionbox">
+                <SuggestionBox></SuggestionBox>
             </div>
         </Layout>
     );

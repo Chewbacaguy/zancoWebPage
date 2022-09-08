@@ -24,8 +24,9 @@ export default function Signup() {
                     {lang.signupContent}
                 </p>
                 <br />
-                <Link href="/sign_up">
-                    <button className={styles.register__button}>{lang.signupRegister}</button>
+                <Link href="https://zanco.zohocreatorportal.com/signup">
+                    {/* <button className={styles.register__button}>{lang.signupRegister}</button> */}
+                    <button className={styles.register__button} > {lang.signupRegister} </button>
                 </Link>
                 <br />
             </div>

@@ -45,6 +45,12 @@ export default {
     signupContent: 'By registering you will be able to monitor all your projects in real time, you will have access to the statistics and graphs of the market in the industry and you will have direct access to the digital operating system.',
     signupRegister: 'Register',
 
+    
+    //sugestion box
+    suggestionTitle: 'Any suggestions?',
+    suggestionsButtonTitle: 'Let us know',
+
+
     // what we do
     whatWeDoTitle: 'Our process',
     whatWeDoStep1: '1. Production',
@@ -63,7 +69,7 @@ export default {
     loginQuestion: 'Not registered yet?',
     loginRegister: 'Register',
 
-    // signup
+    // signup user
     registerTitle: 'Register',
     registerButton: 'Register',
     registerCompany: 'Company name',
@@ -100,6 +106,10 @@ export default {
     contactInputEmail: 'yourname@yourcompany.com',
     contactInputPhone: 'Phone Number',
     contactInputMessage: 'Message',
+
+
+
+
 
     // footer
     footerPermalinks: 'Permalinks',

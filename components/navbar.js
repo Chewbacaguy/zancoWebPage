@@ -41,10 +41,10 @@ export default function Navbar() {
                         <Link href='/contact'>
                             <a className={styles.nav__item}>{lang.navContact}</a>
                         </Link>
-                        <Link href='/sign_in'>
+                        <Link href='https://zanco.zohocreatorportal.com/'>
                             <a className={`${styles.nav__item} ${styles.nav__item__login}`}>{lang.navLogin}</a>
                         </Link>
-                        <Link href='/sign_up'>
+                        <Link href='https://zanco.zohocreatorportal.com/signup'>
                             <a className={`${styles.nav__item} ${styles.nav__item__register}`}>{lang.navRegister}</a>
                         </Link>
                         <a className={styles.nav__item} >
