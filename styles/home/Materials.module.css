@@ -18,6 +18,23 @@
     padding-left: 8%;
 }
 
+
+.modal-main-title{
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 160%;
+    /* or 77px */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #B00000;
+
+}
+
 .grid__title__arrows {
     display: grid;
     grid-template-columns: 2.5fr 1fr;

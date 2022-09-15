@@ -26,7 +26,7 @@ export default function Assemble() {
         <div className={styles.container}>
 
             {/* MODAL FLOORING */}
-            <div className="modal fade" id="formModalFlooring" tabIndex="-1" aria-labelledby="formModalFlooringLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="formModalFlooring" tabIndex="-1" aria-labelledby="formModalFlooringLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -41,11 +41,11 @@ export default function Assemble() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* END MODAL FLOORING */}
 
             {/* MODAL PLASTERS */}
-            <div className="modal fade" id="formModalPlasters" tabIndex="-1" aria-labelledby="formModalPlastersLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="formModalPlasters" tabIndex="-1" aria-labelledby="formModalPlastersLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -60,11 +60,11 @@ export default function Assemble() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* END MODAL PLASTERS */}
 
             {/* MODAL FOAMS */}
-            <div className="modal fade" id="formModalFoams" tabIndex="-1" aria-labelledby="formModalFoamsLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="formModalFoams" tabIndex="-1" aria-labelledby="formModalFoamsLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -79,11 +79,11 @@ export default function Assemble() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* END MODAL FOAMS */}
 
             {/* MODAL CARDBOARDS */}
-            <div className="modal fade" id="formModalCardboards" tabIndex="-1" aria-labelledby="formModalCardboardsLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="formModalCardboards" tabIndex="-1" aria-labelledby="formModalCardboardsLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -98,7 +98,7 @@ export default function Assemble() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* END MODAL CARDBOARDS */}
 
             <p className={styles.title}>{lang.assembleIntegrate}</p>
