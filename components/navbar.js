@@ -32,6 +32,7 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
+                    
                         <Link href='/'>
                             <a className={styles.nav__item} aria-current="page">{lang.navHome}</a>
                         </Link>
